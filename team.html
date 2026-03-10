@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet the team behind Veloura Coffee and learn about the project vision.">
+  <title>Our Team — Veloura Coffee</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-md);
+    }
+
+    .team-card {
+      background: var(--clr-surface);
+      border: 1px solid var(--clr-border);
+      border-radius: 4px;
+      padding: var(--space-lg) var(--space-md);
+      text-align: center;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .team-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .team-card__avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 2px solid var(--clr-bronze-dark);
+      margin: 0 auto var(--space-sm);
+      object-fit: cover;
+    }
+
+    .team-card__name {
+      font-family: var(--ff-heading);
+      font-size: 1.2rem;
+      color: var(--clr-text);
+      margin-bottom: 4px;
+    }
+
+    .team-card__role {
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--clr-bronze);
+      margin-bottom: var(--space-xs);
+    }
+
+    .team-card__page {
+      font-size: 0.85rem;
+      color: var(--clr-text-soft);
+    }
+
+    .project-info {
+      background: var(--clr-surface);
+      border: 1px solid var(--clr-border);
+      border-radius: 4px;
+      padding: var(--space-lg);
+    }
+
+    .project-info h3 {
+      margin-bottom: var(--space-sm);
+    }
+
+    .project-info p {
+      margin-bottom: var(--space-sm);
+    }
+
+    .tech-tags {
+      display: flex;
+      gap: var(--space-xs);
+      flex-wrap: wrap;
+      margin-top: var(--space-sm);
+    }
+
+    .tech-tag {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border: 1px solid var(--clr-bronze-dark);
+      border-radius: 2px;
+      color: var(--clr-bronze);
+    }
+
+    @media (max-width: 768px) {
+      .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar__logo">Veloura <span>Coffee</span></a>
+      <ul class="navbar__links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="team.html">Team</a></li>
+      </ul>
+      <div class="navbar__toggle" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE BANNER ===== -->
+  <section class="page-banner">
+    <div class="container">
+      <p class="section-label">Behind the Project</p>
+      <h1>Our Team</h1>
+      <p>Meet the team that designed and built the Veloura Coffee website.</p>
+    </div>
+  </section>
+
+  <!-- ===== TEAM MEMBERS ===== -->
+  <section class="section" id="team">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">The Team</p>
+        <h2>Team Members</h2>
+        <p>Each member was responsible for designing and developing a specific page of the website.</p>
+      </div>
+      <div class="team-grid reveal">
+        <!-- Member 1 -->
+        <div class="team-card">
+          <img class="team-card__avatar" src="assets/images/1000129266.jpg.jpeg" alt="Ziad Zakaria">
+          <p class="team-card__role">2400285</p>
+          <h3 class="team-card__name">Ziad Zakaria</h3>
+          <p class="team-card__page">Home Page <BR><em>PROJECT - LEADER</em></BR></p>
+        </div>
+        <!-- Member 2 -->
+        <div class="team-card">
+          <img class="team-card__avatar" src="assets/images/team-2.png" alt="Adham Ashraf">
+          <p class="team-card__role">Member 2</p>
+          <h3 class="team-card__name">...</h3>
+          <p class="team-card__page">Products Page</p>
+        </div>
+        <!-- Member 3 -->
+        <div class="team-card">
+          <img class="team-card__avatar" src="assets/images/team-3.png" alt="Member">
+          <p class="team-card__role">Member 3</p>
+          <h3 class="team-card__name">Mohammed Reda</h3>
+          <p class="team-card__page">About Page</p>
+        </div>
+        <!-- Member 4 -->
+        <div class="team-card">
+          <img class="team-card__avatar" src="assets/images/team-4.png" alt="Member">
+          <p class="team-card__role">Member 4</p>
+          <h3 class="team-card__name">...</h3>
+          <p class="team-card__page">Gallery Page</p>
+        </div>
+        <!-- Member 5 -->
+        <div class="team-card">
+          <img class="team-card__avatar" src="assets/images/team-5.png" alt="Member">
+          <p class="team-card__role">Member 5</p>
+          <h3 class="team-card__name">Member</h3>
+          <p class="team-card__page">Offers Page</p>
+        </div>
+        <!-- Member 6 -->
+        <div class="team-card">
+          <img class="team-card__avatar" src="assets/images/team-6.png" alt="Member">
+          <p class="team-card__role">Member 6</p>
+          <h3 class="team-card__name">Member</h3>
+          <p class="team-card__page">Contact Page</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECT IDEA ===== -->
+  <section class="section section--alt" id="project-idea">
+    <div class="container">
+      <div class="split reveal">
+        <div class="split__content">
+          <p class="section-label">Project Overview</p>
+          <h2>About This Project</h2>
+          <p>Veloura Coffee is a premium coffee brand website built as a collaborative web technology project. The goal
+            was to design and develop a fully responsive, multi-page website that reflects a luxury minimal aesthetic
+            using only HTML, CSS, and vanilla JavaScript.</p>
+          <p>The website features a cohesive design system with reusable components, consistent typography and color
+            palette, interactive elements, and a mobile-first responsive layout across all seven pages.</p>
+        </div>
+        <div>
+          <div class="project-info">
+            <h3>Project Details</h3>
+            <p><strong style="color:var(--clr-text);">Course:</strong> Web Technology</p>
+            <p><strong style="color:var(--clr-text);">Semester:</strong> 4</p>
+            <p><strong style="color:var(--clr-text);">Design Style:</strong> Luxury Minimal</p>
+            <p><strong style="color:var(--clr-text);">Pages:</strong> 7 (Home, Products, About, Gallery, Offers,
+              Contact, Team)</p>
+            <div class="tech-tags">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Responsive</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KEY FEATURES ===== -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">What We Built</p>
+        <h2>Key Features</h2>
+      </div>
+      <div class="grid grid--3 reveal">
+        <div class="feature">
+          <div class="feature__icon">🎨</div>
+          <h4 class="feature__title">Shared Design System</h4>
+          <p class="feature__text">Consistent CSS variables, reusable components, shared navbar and footer across all
+            pages.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">📱</div>
+          <h4 class="feature__title">Fully Responsive</h4>
+          <p class="feature__text">Mobile-first design with breakpoints for tablet and desktop layouts.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">⚡</div>
+          <h4 class="feature__title">Interactive JS</h4>
+          <p class="feature__text">Mobile nav toggle, product filters, scroll reveal animations, and form validation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand-name">Veloura <span>Coffee</span></p>
+          <p class="footer__tagline">Premium artisan coffee, roasted to perfection and delivered to your door.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook">Fb</a>
+            <a href="#" aria-label="Instagram">Ig</a>
+            <a href="#" aria-label="Twitter">Tw</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Support</h4>
+          <ul class="footer__links">
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <ul class="footer__links">
+            <li>Banha</li>
+            <li>cairo - Egypt</li>
+            <li>info@velouracoffee.com</li>
+            <li>+0 (123) 234-5678</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Veloura Coffee. All rights reserved.</p>
+        <p>Designed by <a
+            href="https://www.linkedin.com/in/ziad-al-husseiny-79581132b/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BVVFve%2FhvR7aaU4E5f2c5Cg%3D%3D"
+            target="_blank" rel="noopener noreferrer" class="footer__designer">Ziad Al-Husseiny</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

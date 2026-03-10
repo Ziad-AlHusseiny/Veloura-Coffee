@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Explore Veloura Coffee's premium collection of artisan blends, single origins, and espresso roasts.">
+  <title>Products — Veloura Coffee</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar__logo">Veloura <span>Coffee</span></a>
+      <ul class="navbar__links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="team.html">Team</a></li>
+      </ul>
+      <div class="navbar__toggle" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE BANNER ===== -->
+  <section class="page-banner">
+    <div class="container">
+      <p class="section-label">Our Collection</p>
+      <h1>Premium Blends</h1>
+      <p>Explore our curated selection of artisan coffees, each crafted to deliver an extraordinary experience.</p>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS GRID ===== -->
+  <section class="section" id="products">
+    <div class="container">
+      <!-- Filters -->
+      <div class="filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="blend">Blends</button>
+        <button class="filter-btn" data-filter="single-origin">Single Origin</button>
+        <button class="filter-btn" data-filter="espresso">Espresso</button>
+        <button class="filter-btn" data-filter="decaf">Decaf</button>
+      </div>
+
+      <!-- Products -->
+      <div class="grid grid--3 reveal">
+        <!-- Product 1 -->
+        <div class="card product-card" data-category="blend">
+          <img src="assets/images/coffee-bag.png" alt="Signature Blend" class="card__img">
+          <div class="card__body">
+            <h3 class="card__title">Signature Blend</h3>
+            <p class="card__text">Rich and full-bodied with notes of dark chocolate and toasted walnut. Our flagship
+              blend.</p>
+            <div class="card__footer">
+              <span class="card__price">$24.00</span>
+              <a href="#" class="btn btn--sm btn--outline">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="card product-card" data-category="espresso">
+          <img src="assets/images/espresso-machine.png" alt="Espresso Forte" class="card__img">
+          <div class="card__body">
+            <h3 class="card__title">Espresso Forte</h3>
+            <p class="card__text">Bold and intense with a velvety crema and a lingering smoky caramel finish.</p>
+            <div class="card__footer">
+              <span class="card__price">$22.00</span>
+              <a href="#" class="btn btn--sm btn--outline">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="card product-card" data-category="single-origin">
+          <img src="assets/images/pour-over.png" alt="Ethiopian Yirgacheffe" class="card__img">
+          <div class="card__body">
+            <h3 class="card__title">Ethiopian Yirgacheffe</h3>
+            <p class="card__text">Bright and floral with notes of bergamot, jasmine, and a clean citrus finish.</p>
+            <div class="card__footer">
+              <span class="card__price">$28.00</span>
+              <a href="#" class="btn btn--sm btn--outline">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="card product-card" data-category="blend">
+          <img src="assets/images/coffee-beans.png" alt="Morning Light" class="card__img">
+          <div class="card__body">
+            <h3 class="card__title">Morning Light</h3>
+            <p class="card__text">A smooth medium roast with citrus undertones. Perfect for a gentle start to the day.
+            </p>
+            <div class="card__footer">
+              <span class="card__price">$20.00</span>
+              <a href="#" class="btn btn--sm btn--outline">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="card product-card" data-category="single-origin">
+          <img src="assets/images/brewing-setup.png" alt="Colombian Supremo" class="card__img">
+          <div class="card__body">
+            <h3 class="card__title">Colombian Supremo</h3>
+            <p class="card__text">Sweet, nutty, and balanced with a mild acidity and a caramel undertone.</p>
+            <div class="card__footer">
+              <span class="card__price">$26.00</span>
+              <a href="#" class="btn btn--sm btn--outline">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="card product-card" data-category="espresso">
+          <img src="assets/images/coffee-roasting.png" alt="Dark Velvet Espresso" class="card__img">
+          <div class="card__body">
+            <h3 class="card__title">Dark Velvet Espresso</h3>
+            <p class="card__text">Deep, smoky, and luxurious. A dark roast crafted for pure espresso intensity.</p>
+            <div class="card__footer">
+              <span class="card__price">$23.00</span>
+              <a href="#" class="btn btn--sm btn--outline">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="card product-card" data-category="decaf">
+          <img src="assets/images/coffee-cup-dark.png" alt="Decaf Serenity" class="card__img">
+          <div class="card__body">
+            <h3 class="card__title">Decaf Serenity</h3>
+            <p class="card__text">All the depth and warmth without the caffeine. Smooth, mellow, and satisfying.</p>
+            <div class="card__footer">
+              <span class="card__price">$21.00</span>
+              <a href="#" class="btn btn--sm btn--outline">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="card product-card" data-category="single-origin">
+          <img src="assets/images/latte-art.png" alt="Sumatra Mandheling" class="card__img">
+          <div class="card__body">
+            <h3 class="card__title">Sumatra Mandheling</h3>
+            <p class="card__text">Earthy and herbal with low acidity and a full, syrupy body. A bold single origin.</p>
+            <div class="card__footer">
+              <span class="card__price">$27.00</span>
+              <a href="#" class="btn btn--sm btn--outline">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="card product-card" data-category="decaf">
+          <img src="assets/images/hero-coffee.png" alt="Decaf Evening Blend" class="card__img">
+          <div class="card__body">
+            <h3 class="card__title">Decaf Evening Blend</h3>
+            <p class="card__text">A gentle, chocolatey blend designed for late-night sipping without compromise.</p>
+            <div class="card__footer">
+              <span class="card__price">$22.00</span>
+              <a href="#" class="btn btn--sm btn--outline">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED COLLECTION ===== -->
+  <section class="section section--alt" id="featured">
+    <div class="container">
+      <div class="split reveal">
+        <div class="split__img">
+          <img src="assets/images/coffee-roasting.png" alt="Veloura Reserve Collection">
+        </div>
+        <div class="split__content">
+          <p class="section-label">Limited Edition</p>
+          <h2>The Reserve Collection</h2>
+          <p>Explore our exclusive Reserve Collection — a selection of rare, micro-lot coffees sourced from the world's
+            most exceptional farms. Each batch is limited and roasted to highlight its unique terroir.</p>
+          <p>Available in small quantities while stocks last.</p>
+          <a href="#" class="btn btn--primary">Discover Reserve</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta reveal">
+    <div class="container">
+      <p class="section-label">Need Help Choosing?</p>
+      <h2>Find Your Perfect Blend</h2>
+      <p>Not sure which roast is right for you? Reach out and our team will help you discover your ideal coffee.</p>
+      <a href="contact.html" class="btn btn--primary">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand-name">Veloura <span>Coffee</span></p>
+          <p class="footer__tagline">Premium artisan coffee, roasted to perfection and delivered to your door.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook">Fb</a>
+            <a href="#" aria-label="Instagram">Ig</a>
+            <a href="#" aria-label="Twitter">Tw</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Support</h4>
+          <ul class="footer__links">
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <ul class="footer__links">
+            <li>Banha</li>
+            <li>cairo - Egypt</li>
+            <li>info@velouracoffee.com</li>
+            <li>+0 (123) 234-5678</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Veloura Coffee. All rights reserved.</p>
+        <p>Designed by <a href="https://www.linkedin.com/in/ziad-al-husseiny-79581132b/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BVVFve%2FhvR7aaU4E5f2c5Cg%3D%3D" target="_blank" rel="noopener noreferrer" class="footer__designer">Ziad Al-Husseiny</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
