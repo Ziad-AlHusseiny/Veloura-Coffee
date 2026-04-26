@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover exclusive offers, combo deals, and seasonal specials from Veloura Coffee.">
+  <title>Offers — Veloura Coffee</title>
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('veloura-theme') === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar__logo">Veloura <span>Coffee</span></a>
+      <ul class="navbar__links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="team.html">Team</a></li>
+      </ul>
+      <div class="navbar__actions">
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-pressed="false" title="Switch theme" aria-label="Switch to dark mode">
+          <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">&#9728;</span>
+          <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">&#9789;</span>
+        </button>
+        <div class="navbar__toggle" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE BANNER ===== -->
+  <section class="page-banner">
+    <div class="container">
+      <p class="section-label">Special Deals</p>
+      <h1>Our Offers</h1>
+      <p>Exclusive promotions and curated bundles to elevate your daily coffee ritual.</p>
+    </div>
+  </section>
+
+  <!-- ===== OFFER CARDS ===== -->
+  <section class="section" id="offers">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Limited Time</p>
+        <h2>Featured Offers</h2>
+        <p>Take advantage of our handpicked deals before they're gone.</p>
+      </div>
+      <div class="grid grid--3 reveal">
+        <!-- Offer 1 -->
+        <div class="offer-card">
+          <div class="offer-card__badge">Save 20%</div>
+          <h3 class="offer-card__title">Starter Pack</h3>
+          <p class="offer-card__price">$38.00</p>
+          <p class="offer-card__original">$48.00</p>
+          <p class="offer-card__text">Perfect for new customers. Three of our most popular blends in sample sizes.</p>
+          <ul class="offer-card__features">
+            <li>Signature Blend (100g)</li>
+            <li>Morning Light (100g)</li>
+            <li>Espresso Forte (100g)</li>
+            <li>Free shipping</li>
+          </ul>
+          <a href="#" class="btn btn--primary">Claim Offer</a>
+        </div>
+        <!-- Offer 2 -->
+        <div class="offer-card">
+          <div class="offer-card__badge">Best Value</div>
+          <h3 class="offer-card__title">Connoisseur Bundle</h3>
+          <p class="offer-card__price">$65.00</p>
+          <p class="offer-card__original">$82.00</p>
+          <p class="offer-card__text">Our most popular bundle. Five premium blends for the true coffee lover.</p>
+          <ul class="offer-card__features">
+            <li>Signature Blend (250g)</li>
+            <li>Ethiopian Yirgacheffe (250g)</li>
+            <li>Colombian Supremo (250g)</li>
+            <li>Espresso Forte (250g)</li>
+            <li>Morning Light (250g)</li>
+          </ul>
+          <a href="#" class="btn btn--primary">Claim Offer</a>
+        </div>
+        <!-- Offer 3 -->
+        <div class="offer-card">
+          <div class="offer-card__badge">Premium</div>
+          <h3 class="offer-card__title">Gift Collection</h3>
+          <p class="offer-card__price">$85.00</p>
+          <p class="offer-card__original">$105.00</p>
+          <p class="offer-card__text">An elegant gift set for someone special. Premium packaging included.</p>
+          <ul class="offer-card__features">
+            <li>Reserve Blend (250g)</li>
+            <li>Sumatra Mandheling (250g)</li>
+            <li>Dark Velvet Espresso (250g)</li>
+            <li>Gift box &amp; card</li>
+            <li>Free express shipping</li>
+          </ul>
+          <a href="#" class="btn btn--primary">Claim Offer</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMBO DEALS ===== -->
+  <section class="section section--alt" id="combos">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Mix &amp; Match</p>
+        <h2>Combo Deals</h2>
+        <p>Build your own coffee experience with our curated combo options.</p>
+      </div>
+      <div class="grid grid--2 reveal">
+        <!-- Combo 1 -->
+        <div class="card">
+          <img src="assets/images/coffee-beans.png" alt="Duo Pack" class="card__img">
+          <div class="card__body">
+            <h3 class="card__title">The Duo</h3>
+            <p class="card__text">Choose any two blends from our collection and save 15%. Mix your favorites for the
+              perfect balance.</p>
+            <div class="card__footer">
+              <span class="card__price">From $36.00</span>
+              <a href="#" class="btn btn--sm btn--outline">Select</a>
+            </div>
+          </div>
+        </div>
+        <!-- Combo 2 -->
+        <div class="card">
+          <img src="assets/images/brewing-setup.png" alt="Brewing Kit" class="card__img">
+          <div class="card__body">
+            <h3 class="card__title">Brewing Essentials Kit</h3>
+            <p class="card__text">A premium blend paired with our recommended brewing guide. Everything you need to brew
+              like a pro.</p>
+            <div class="card__footer">
+              <span class="card__price">From $45.00</span>
+              <a href="#" class="btn btn--sm btn--outline">Select</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SEASONAL SPECIAL ===== -->
+  <section class="section highlight-section" id="seasonal">
+    <div class="container">
+      <div class="split reveal">
+        <div class="split__content">
+          <p class="section-label">Spring 2026</p>
+          <h2>Seasonal Special: <br><span class="text-bronze">Golden Sunrise Blend</span></h2>
+          <p>A limited-edition light roast with floral notes and a honey-sweet finish, sourced from a single estate in
+            Costa Rica. Available only this season.</p>
+          <p>Each bag is hand-numbered and includes tasting notes from our head roaster.</p>
+          <div style="margin-top:var(--space-md);">
+            <span
+              style="font-family:var(--ff-heading);font-size:1.6rem;color:var(--clr-bronze);margin-right:var(--space-sm);">$32.00</span>
+            <span style="font-size:0.9rem;color:var(--clr-text-soft);text-decoration:line-through;">$40.00</span>
+          </div>
+          <div style="margin-top:var(--space-md);">
+            <a href="#" class="btn btn--primary">Order Now</a>
+          </div>
+        </div>
+        <div class="split__img">
+          <img src="assets/images/coffee-cup-dark.png" alt="Golden Sunrise seasonal blend">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta reveal">
+    <div class="container">
+      <p class="section-label">Stay Updated</p>
+      <h2>Never Miss an Offer</h2>
+      <p>Follow us on social media or reach out to stay informed about our latest deals and seasonal releases.</p>
+      <a href="contact.html" class="btn btn--primary">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand-name">Veloura <span>Coffee</span></p>
+          <p class="footer__tagline">Premium artisan coffee, roasted to perfection and delivered to your door.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook">Fb</a>
+            <a href="#" aria-label="Instagram">Ig</a>
+            <a href="#" aria-label="Twitter">Tw</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Support</h4>
+          <ul class="footer__links">
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <ul class="footer__links">
+            <li>Banha</li>
+            <li>cairo - Egypt</li>
+            <li>info@velouracoffee.com</li>
+            <li>+0 (123) 234-5678</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Veloura Coffee. All rights reserved.</p>
+        <p>Designed by <a href="https://www.linkedin.com/in/ziad-al-husseiny-79581132b/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BVVFve%2FhvR7aaU4E5f2c5Cg%3D%3D" target="_blank" rel="noopener noreferrer" class="footer__designer">Ziad Al-Husseiny</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

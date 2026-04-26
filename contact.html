@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Get in touch with Veloura Coffee — reach out for inquiries, wholesale partnerships, or just to say hello.">
+  <title>Contact Us — Veloura Coffee</title>
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem('veloura-theme') === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar__logo">Veloura <span>Coffee</span></a>
+      <ul class="navbar__links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="team.html">Team</a></li>
+      </ul>
+      <div class="navbar__actions">
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-pressed="false" title="Switch theme" aria-label="Switch to dark mode">
+          <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">&#9728;</span>
+          <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">&#9789;</span>
+        </button>
+        <div class="navbar__toggle" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE BANNER ===== -->
+  <section class="page-banner">
+    <div class="container">
+      <p class="section-label">Get in Touch</p>
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you. Reach out for questions, wholesale inquiries, or just to say hello.</p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="split reveal">
+        <!-- Contact Form -->
+        <div>
+          <p class="section-label">Send a Message</p>
+          <h2 class="mb-md">Drop Us a Line</h2>
+          <form class="form" id="contact-form">
+            <div class="form__group">
+              <label class="form__label" for="contact-name">Full Name</label>
+              <input class="form__input" type="text" id="contact-name" placeholder="Your name">
+              <p class="form__error"></p>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="contact-email">Email Address</label>
+              <input class="form__input" type="email" id="contact-email" placeholder="your@email.com">
+              <p class="form__error"></p>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="contact-subject">Subject</label>
+              <input class="form__input" type="text" id="contact-subject" placeholder="What's this about?">
+              <p class="form__error"></p>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="contact-message">Message</label>
+              <textarea class="form__textarea" id="contact-message" placeholder="Your message..."></textarea>
+              <p class="form__error"></p>
+            </div>
+            <button type="submit" class="btn btn--primary">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <p class="section-label">Reach Us Directly</p>
+          <h2 class="mb-md">Contact Information</h2>
+          <div class="contact-info mb-lg">
+            <div class="contact-info__item">
+              <div class="contact-info__icon">📍</div>
+              <div>
+                <p class="contact-info__label">Address</p>
+                <p class="contact-info__text">Banha<br>Egypt</p>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <div class="contact-info__icon">✉</div>
+              <div>
+                <p class="contact-info__label">Email</p>
+                <p class="contact-info__text">info@velouracoffee.com</p>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <div class="contact-info__icon">📞</div>
+              <div>
+                <p class="contact-info__label">Phone</p>
+                <p class="contact-info__text">+0 (123) 234-5678</p>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <div class="contact-info__icon">💬</div>
+              <div>
+                <p class="contact-info__label">Social</p>
+                <p class="contact-info__text">@velouracoffee</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Work Hours -->
+          <p class="section-label">Visit Us</p>
+          <h3 class="mb-sm">Working Hours</h3>
+          <ul class="hours-list">
+            <li><span>Monday — Friday</span><span>7:00 AM — 8:00 PM</span></li>
+            <li><span>Saturday</span><span>8:00 AM — 9:00 PM</span></li>
+            <li><span>Sunday</span><span>9:00 AM — 6:00 PM</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAP PLACEHOLDER ===== -->
+  <section class="section section--alt" id="map">
+    <div class="container reveal">
+      <div class="section-header">
+        <p class="section-label">Find Us</p>
+        <h2>Our Location</h2>
+      </div>
+      <div class="map-placeholder">
+        <p>📍 Banha , Egypt</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta reveal">
+    <div class="container">
+      <p class="section-label">Stay Connected</p>
+      <h2>Follow Our Journey</h2>
+      <p>Stay updated with our latest blends, seasonal specials, and behind-the-scenes content.</p>
+      <a href="products.html" class="btn btn--primary">Explore Products</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand-name">Veloura <span>Coffee</span></p>
+          <p class="footer__tagline">Premium artisan coffee, roasted to perfection and delivered to your door.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook">Fb</a>
+            <a href="#" aria-label="Instagram">Ig</a>
+            <a href="#" aria-label="Twitter">Tw</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Support</h4>
+          <ul class="footer__links">
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <ul class="footer__links">
+            <li>Banha</li>
+            <li>cairo - Egypt</li>
+            <li>info@velouracoffee.com</li>
+            <li>+0 (123) 234-5678</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Veloura Coffee. All rights reserved.</p>
+        <p>Designed by <a href="https://www.linkedin.com/in/ziad-al-husseiny-79581132b/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BVVFve%2FhvR7aaU4E5f2c5Cg%3D%3D" target="_blank" rel="noopener noreferrer" class="footer__designer">Ziad Al-Husseiny</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
